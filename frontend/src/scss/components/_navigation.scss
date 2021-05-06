@@ -1,0 +1,55 @@
+.nav {
+  background-image: linear-gradient(to right, #F7D488, #F7D488);
+  text-align: center;
+  @include clearfix;
+  &__ul {
+    display: inline-block;
+    list-style: none;
+    &--item {
+      display: inline-block;
+      padding: 0 2rem;
+      font-size: 2rem;
+    }
+  }
+  &__dropdown {
+    padding: 0 2rem;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    &--ul {
+      list-style: none;
+      position: absolute;
+      background-image: linear-gradient(to bottom, $color-white, $color-white);
+      box-shadow: rgba($color-golden-primary, 0.38) 6px 2px 16px 0px,
+      rgba(rgba($color-golden-primary, 0.38), 0.5) -6px -2px 16px 0px;
+      border-radius: 4px;
+      z-index: 9999;
+      pointer-events: none;
+      opacity: 0;
+      transition: all .2s ease;
+      transform: translateY(-10px);
+      &--item {
+        display: inline-block;
+        padding: 0 2rem;
+      }
+    }
+    &--li {
+      text-align: center;
+    }
+    &--anchor:focus + &--ul {
+      opacity: 1;
+      pointer-events: all !important;
+      transform: translateY(0);
+    }
+    ion-icon {
+      display: inline-block;
+      position: absolute;
+      right: 5.5rem;
+      top: 2.2rem;
+    }
+  }
+}
+
+a:focus {
+  pointer-events: auto;
+}

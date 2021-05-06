@@ -1,0 +1,111 @@
+.btn-solid {
+  background-color: $color-white;
+  color: $color-black-light;
+  font-weight: 400;
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 4rem;
+    border-radius: 10rem;
+    transition: transform 0.2s;
+    position: relative;
+    font-size: $default-font-size;
+    border: none;
+    cursor: pointer;
+  }
+  &:hover{
+    transform: translateY(-0.2rem);
+    // background-color: $color-pink-dark;
+    color: $color-orange-primary;
+    box-shadow: 0 1rem 2rem rgba($color-black-dark, .2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+  &:active,
+  &:focus {
+    outline:none;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba($color-black-dark, .2);
+  }
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+    background-color: $color-white;
+  }
+  &--animated {
+    animation-name: moveInBottom;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+  }
+}
+
+.btn {
+  color: $color-black-light;
+  font-weight: 400;
+  opacity: 1;
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 2rem;
+    margin: 0 3rem;
+    transition: transform 0.2s;
+    font-size: $default-font-size;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+  }
+  &:hover {
+    opacity: .8;
+    border-bottom: 3px solid $color-orange-primary;
+  }
+}
+
+.btn-dropdown {
+  color: $color-black-light;
+  font-weight: 400;
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 4rem;
+    transition: transform 0.2s;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+  &:hover {
+    color: $color-black-light;
+    opacity: .7;
+    background-color: $color-grey-light;
+  }
+}
+
+.btn-faint {
+    &:link,
+    &:visited {
+      opacity: .2;    
+    }
+    &:hover {
+      opacity: .2;
+    }
+}
