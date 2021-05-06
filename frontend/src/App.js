@@ -8,7 +8,7 @@ import NavBar from './NavBar';
 class App extends React.Component{
   render() {
     return (
-      <div>
+      <div className = "app">
         <NavBar></NavBar>
         <Route exact path = "/" component = {Home} />
         <Route exact path = "/supply" component = {Supply} />

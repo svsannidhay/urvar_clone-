@@ -8,11 +8,17 @@
 
 html {
   font-size: 62.5%;
+  @include respond(small-phone) {
+    font-size: 50%;
+  }
 }
 
 body {
   box-sizing: border-box;
-  background-color: $color-black;
-  padding: 3rem;
+  padding: 2rem;
+  @include respond(small-phone) {
+    padding: 0rem;
+  }
+  color: $color-white;
 }
 
