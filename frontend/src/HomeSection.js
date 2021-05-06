@@ -1,10 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-class HomeSection extends React.Component{
-  
+class HomeSection extends React.Component{  
   constructor(props) {
     super(props);
+    this.state = {
+      buttonClass: ""
+    };
+  }
+
+  checkButton = () => {
+    if(this.props.showButton === false) {
+      this.setState({
+        buttonClass: "section__hideButton"
+      }); 
+    }
+  } 
+
+  componentDidMount() {
+    this.checkButton();
   }
 
   render() {
@@ -16,7 +30,7 @@ class HomeSection extends React.Component{
                 <span className = "section__heading-primary--main heading-primary--main">{this.props.mainHeading}</span>
                 <span className = "section__heading-primary--sub heading-primary--sub">{this.props.subHeading}</span>
               </h1>
-              <Link to = "/supply" className = "btn btn--green btn--animated section__show-button">See supply</Link>
+              <Link to = "/supply" className = {`btn btn--green btn--animated ${this.state.buttonClass}`}>See supply</Link>
             </div>
           </div>
           <div className = "section__block col span-1-of-2" >

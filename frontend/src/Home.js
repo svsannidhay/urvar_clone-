@@ -13,7 +13,8 @@ class Home extends React.Component {
         <HomeSection 
           mainHeading = "Get organic or naturally produce supply" 
           subHeading = "The produce is procured from various certified farmers."
-          imgLink = {image2}>
+          imgLink = {image2}
+          showButton = {false}>
         </HomeSection>
       </div>
     );
