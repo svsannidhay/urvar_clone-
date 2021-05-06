@@ -1,0 +1,37 @@
+.section {
+  
+  &__block {
+    position: relative;
+    text-align: center;
+  }
+
+  &__text-box {
+    margin-left: 5rem;
+
+    @include respond(small-phone) {
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    text-align: center;
+  }
+
+  &__text-box{
+    padding: 5rem;
+  }
+
+  &__heading-primary--main {
+    font-size: 3.5rem;
+    letter-spacing: 1rem;
+    margin-bottom: 3rem;
+  }
+  &__heading-primary--sub {
+    font-size: 2rem;
+    letter-spacing: .5rem;
+  }
+
+  &__img {
+    width: 50%;
+    height: auto;
+  }
+}

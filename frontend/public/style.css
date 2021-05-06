@@ -67,8 +67,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   /* font-size: 16px; */
-  line-height: 1.7;
-  color: #777; }
+  line-height: 1.7; }
 
 .heading-primary {
   color: #fff;
@@ -502,3 +501,86 @@ body {
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(-0.1rem); }
+
+.statistics {
+  padding: 5rem 0; }
+  .statistics__block {
+    width: 55%;
+    margin: 1rem auto;
+    text-align: center; }
+  .statistics__list {
+    list-style: none;
+    border: 2px solid #eee;
+    margin: 1rem;
+    border-radius: 1rem; }
+    .statistics__list :not(:last-child) {
+      border-right: 1px solid #f7f7f7; }
+      @media (max-width: 75em) {
+        .statistics__list :not(:last-child) {
+          border-right: none; } }
+  .statistics__item {
+    display: inline-block;
+    padding: 0rem 8rem;
+    margin: 4rem 0;
+    font-size: 3rem; }
+    @media (max-width: 96.875em) {
+      .statistics__item {
+        padding: 0rem 5rem; } }
+    .statistics__item--main {
+      display: block;
+      font-size: 3rem;
+      font-weight: 400;
+      letter-spacing: .5rem;
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-in;
+      border-right: none  !important; }
+      @media (max-width: 37.5em) {
+        .statistics__item--main {
+          letter-spacing: .3rem;
+          font-size: 2rem; } }
+      @media (max-width: 30em) {
+        .statistics__item--main {
+          letter-spacing: .1rem;
+          font-size: 1.5rem; } }
+    .statistics__item--sub {
+      display: block;
+      font-size: 1.7rem;
+      font-weight: 700;
+      letter-spacing: .64rem;
+      color: #1890ff;
+      animation-name: moveInRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-in; }
+      @media (max-width: 37.5em) {
+        .statistics__item--sub {
+          letter-spacing: .2rem;
+          font-size: 1rem; } }
+
+.section__block {
+  position: relative;
+  text-align: center; }
+
+.section__text-box {
+  margin-left: 5rem;
+  text-align: center; }
+  @media (max-width: 30em) {
+    .section__text-box {
+      margin: 0 auto;
+      padding: 1rem; } }
+
+.section__text-box {
+  padding: 5rem; }
+
+.section__heading-primary--main {
+  font-size: 3.5rem;
+  letter-spacing: 1rem;
+  margin-bottom: 3rem; }
+
+.section__heading-primary--sub {
+  font-size: 2rem;
+  letter-spacing: .5rem; }
+
+.section__img {
+  width: 50%;
+  height: auto; }

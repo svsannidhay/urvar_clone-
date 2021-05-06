@@ -16,9 +16,11 @@ html {
 body {
   box-sizing: border-box;
   padding: 2rem;
+  // background-color: $color-black;
   @include respond(small-phone) {
     padding: 0rem;
   }
   color: $color-white;
 }
+
 

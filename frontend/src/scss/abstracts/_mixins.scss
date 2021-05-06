@@ -26,7 +26,7 @@
     @media (max-width: 75em) { @content }; //1200px
   }
   @if $breakpoint == tab-large {
-    @media (max-width: 106.25em) { @content }; //1700px
+    @media (max-width: 96.875em) { @content }; //1550px
   }
   @if $breakpoint == big-desktop {
     @media (min-width: 112.5em) { @content };  //1800px

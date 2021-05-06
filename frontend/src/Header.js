@@ -5,7 +5,7 @@ import Image from './Images/header_img.png';
 class Header extends React.Component{
   render() {
     return(
-      <header className = "row header"> 
+    <header className = "row header"> 
         <div className = "header__block col span-1-of-2">
           <div className = "header__text-box">
             <h1 className = "heading-primary">
