@@ -21,7 +21,7 @@ class PopupSupply extends React.Component {
     this.state = {
       name: "",
       type: "",
-      location: "",
+      certification: "",
       quantity: 0,
       imgUrl: ""
     }
@@ -38,11 +38,11 @@ class PopupSupply extends React.Component {
     event.preventDefault();
     console.log('submit');
     this.props.closePopup();
-    await axios.post("/urvar/demand",this.state);
+    await axios.post("/urvar/supply",this.state);
     this.setState({
       name: "",
       type: "",
-      location: "",
+      certification: "",
       quantity: 0,
       imgUrl: ""
     });
@@ -68,8 +68,8 @@ class PopupSupply extends React.Component {
               required
             />
             <input className ="input-field filed input-url" type="text"
-              placeholder = "location" value = {this.props.url}
-              name ="location"
+              placeholder = "certification" value = {this.props.url}
+              name ="certification"
               onChange = {this.onInputChange}
               required
             />

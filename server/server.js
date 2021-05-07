@@ -1,12 +1,13 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import supplyCards from './models/supplyCards.js';
+import demandCards from './models/demandCards.js';
 import Cors from 'cors';
 
 //App config
 const app = express();
 const port = process.env.PORT || 8001;
-const connection_url = `mongodb+srv://admin:admin@cluster0.mdk83.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+const connection_url = `mongodb+srv://admin:Physics54321@cluster0.mdk83.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 
 //Middlewares
 app.use(express.json());
@@ -37,6 +38,26 @@ app.post('/urvar/supply', (req,res) => {
 
 app.get('/urvar/supply', (req,res) => {
   supplyCards.find( (err,data) => {
+    if(err) {
+      res.status(500).send(err);
+    } else {
+      res.status(200).send(data);
+    }
+  });
+});
+app.post('/urvar/demand', (req,res) => {
+  const demandCard = req.body;
+  demandCards.create(demandCard, (err,data) => {
+    if(err) {
+      res.status(500).send(err);
+    } else {
+      res.status(201).send(data);
+    }
+  });
+});
+
+app.get('/urvar/demand', (req,res) => {
+  demandCards.find( (err,data) => {
     if(err) {
       res.status(500).send(err);
     } else {

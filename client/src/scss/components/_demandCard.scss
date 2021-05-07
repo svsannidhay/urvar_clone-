@@ -1,0 +1,72 @@
+.demand {
+  @include clearfix;
+
+  &__heading {
+    padding: 4rem;
+  }
+
+  &__button {
+    text-align: left;
+  }
+
+  &__card {
+    margin-bottom: 2rem;
+    overflow: hidden;
+    margin-top: 3rem;
+    width: 35%;
+    margin-right: 7.5%;
+    margin-left: 7.5% !important;
+
+    @include respond(tab-medium) {
+      width: 45%;
+      margin-right: 2.5%;
+      margin-left: 2.5% !important;
+    }
+
+    @include respond(tab-small) {
+      width: 80%;
+      margin-left: 10% !important;
+    }
+
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 5px 25px 0px;
+
+    &--shape {
+      float: left;
+    }
+
+    &--img {
+      height: 22rem;
+      width: 22rem;
+    }
+
+    &--text {
+      padding: 1rem;
+      margin-left: 22rem;
+    }
+
+    &--container {
+      display: block;
+    }
+
+    &--name {
+      display: inline-block;
+      padding: .5rem;
+    }
+
+    &--type {
+      float: right;
+      padding: .5rem;
+      color: $color-default-green;
+    }
+
+    &--p {
+      display: inline-block;
+      padding: .5rem;
+    }
+
+    &--quantity {
+      padding: .5rem;
+      float: right;
+    }
+  }
+}
