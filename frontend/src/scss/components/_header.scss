@@ -32,17 +32,19 @@
 
   &__block{
     position: relative;
+    text-align: center;
     height: 95vh;
-    @include respond(small-phone) {
+    @include respond(phone) {
       height: 45vh;
     }
+    margin-bottom: 5rem;
   }
 
   &__text-box {
     position: absolute;
     top: 20%;
     margin-left: 5rem;
-    @include respond(small-phone) {
+    @include respond(phone) {
       margin: 0 auto;
       padding: 1rem;
     }
@@ -51,5 +53,9 @@
   &__img {
     width: 100%;
     height: auto;
+    @include respond(phone) {
+      width:50%;
+      height: auto;
+    }
   }
 }

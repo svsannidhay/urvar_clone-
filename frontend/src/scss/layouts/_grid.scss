@@ -10,6 +10,17 @@
 
 .row {
   zoom: 1;
+  width: 1400px;
+  margin: 0 auto;
+  @include respond(tab-large) {
+    width: 95%;
+  }
+  @include respond(tab-medium) {
+    width: 96%;
+  }
+  @include respond(tab-small) {
+    width: 98%;
+  }
   /* For IE 6/7 (trigger hasLayout) */
 }
 
@@ -40,7 +51,7 @@
 
 /*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 580px) {
   .col {
     /*margin: 1% 0 1% 0%;*/
     margin: 0;
@@ -61,7 +72,7 @@
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 580px) {
   .span-2-of-2 {
     width: 100%;
   }
@@ -90,7 +101,7 @@
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 580px) {
   .span-3-of-3 {
     width: 100%;
   }
@@ -126,7 +137,7 @@
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 580px) {
   .span-4-of-4 {
     width: 100%;
   }

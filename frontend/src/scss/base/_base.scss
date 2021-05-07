@@ -17,10 +17,8 @@ body {
   box-sizing: border-box;
   padding: 2rem;
   // background-color: $color-black;
-  @include respond(small-phone) {
+  @include respond(tab-small) {
     padding: 0rem;
   }
   color: $color-white;
 }
-
-
