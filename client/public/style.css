@@ -534,6 +534,15 @@ body {
   font-size: 1.2rem;
   letter-spacing: .2rem;
   padding: 1rem 3rem; }
+  @media (max-width: 96.875em) {
+    .btn--card {
+      margin-bottom: 1rem;
+      padding: .8rem 2.5rem; } }
+  @media (max-width: 37.5em) {
+    .btn--card {
+      font-size: 1rem;
+      padding: .5rem 2rem;
+      margin-bottom: .2rem; } }
 
 .statistics {
   padding: 5rem 0; }
@@ -694,37 +703,74 @@ body {
   .supply__card--img {
     height: 22rem;
     width: 22rem; }
+    @media (max-width: 96.875em) {
+      .supply__card--img {
+        height: 19rem;
+        width: 19rem; } }
+    @media (max-width: 37.5em) {
+      .supply__card--img {
+        height: 15rem;
+        width: 15rem; } }
   .supply__card--text {
     padding: 1rem;
     margin-left: 22rem; }
+    @media (max-width: 96.875em) {
+      .supply__card--text {
+        margin-left: 19rem; } }
+    @media (max-width: 37.5em) {
+      .supply__card--text {
+        margin-left: 15rem; } }
   .supply__card--container {
     display: block; }
   .supply__card--name {
     display: inline-block;
     padding: .5rem; }
+    @media (max-width: 37.5em) {
+      .supply__card--name {
+        font-size: 1.3rem; } }
   .supply__card--type {
     float: right;
     padding: .5rem;
     color: #1db954; }
+    @media (max-width: 37.5em) {
+      .supply__card--type {
+        font-size: 1.3rem; } }
   .supply__card--p {
     display: inline-block;
     padding: .5rem; }
+    @media (max-width: 37.5em) {
+      .supply__card--p {
+        font-size: 1.3rem; } }
   .supply__card--quantity {
     padding: .5rem;
     float: right; }
+    @media (max-width: 37.5em) {
+      .supply__card--quantity {
+        font-size: 1.3rem; } }
 
 .input-form {
-  padding: 20px; }
+  padding: 2rem; }
+  @media (max-width: 56.25em) {
+    .input-form {
+      padding: 1.5rem; } }
 
 .input-field {
   display: block;
   margin: 20px 0;
   padding: 10px 15px;
-  width: 400px;
-  font-size: 15px;
+  width: 40rem;
+  font-size: 1.5rem;
   border: 1px solid #555;
   outline: none;
   transition: all 0.3s; }
+  @media (max-width: 56.25em) {
+    .input-field {
+      padding: .8rem 1.5rem;
+      width: 35rem; } }
+  @media (max-width: 37.5em) {
+    .input-field {
+      padding: .7rem 1.3rem;
+      width: 30rem; } }
 
 .input-field:hover {
   border: 1px solid #55c57a; }
@@ -732,12 +778,6 @@ body {
 .input-field:focus {
   border: 1px solid #55c57a;
   background-color: #e8ffe3; }
-
-.postForm-text {
-  font-size: 35px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 1.5px; }
 
 .demand::after {
   content: "";
@@ -772,21 +812,47 @@ body {
   .demand__card--img {
     height: 22rem;
     width: 22rem; }
+    @media (max-width: 96.875em) {
+      .demand__card--img {
+        height: 19rem;
+        width: 19rem; } }
+    @media (max-width: 37.5em) {
+      .demand__card--img {
+        height: 15rem;
+        width: 15rem; } }
   .demand__card--text {
     padding: 1rem;
     margin-left: 22rem; }
+    @media (max-width: 96.875em) {
+      .demand__card--text {
+        margin-left: 19rem; } }
+    @media (max-width: 37.5em) {
+      .demand__card--text {
+        margin-left: 15rem; } }
   .demand__card--container {
     display: block; }
   .demand__card--name {
     display: inline-block;
     padding: .5rem; }
+    @media (max-width: 37.5em) {
+      .demand__card--name {
+        font-size: 1.3rem; } }
   .demand__card--type {
     float: right;
     padding: .5rem;
     color: #1db954; }
+    @media (max-width: 37.5em) {
+      .demand__card--type {
+        font-size: 1.3rem; } }
   .demand__card--p {
     display: inline-block;
     padding: .5rem; }
+    @media (max-width: 37.5em) {
+      .demand__card--p {
+        font-size: 1.3rem; } }
   .demand__card--quantity {
     padding: .5rem;
     float: right; }
+    @media (max-width: 37.5em) {
+      .demand__card--quantity {
+        font-size: 1.3rem; } }

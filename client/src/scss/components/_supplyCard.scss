@@ -29,10 +29,25 @@
     &--img {
       height:22rem;
       width:22rem;
+      @include respond(tab-large) {
+        height:19rem;
+        width:19rem;
+      }
+      @include respond(phone) {
+        height:15rem;
+        width:15rem;
+      }
+
     }
     &--text {
       padding:1rem;
       margin-left:22rem;
+      @include respond(tab-large) {
+        margin-left:19rem;
+      }
+      @include respond(phone) {
+        margin-left:15rem;
+      }
     }
     &--container {
       display: block;
@@ -40,19 +55,31 @@
     &--name {
       display: inline-block;
       padding: .5rem;
+      @include respond(phone) {
+        font-size: 1.3rem;
+      }
     }
     &--type {
       float: right;
       padding: .5rem;
       color: $color-default-green;
+      @include respond(phone) {
+        font-size: 1.3rem;
+      }
     }
     &--p {
       display: inline-block;
       padding: .5rem;
+      @include respond(phone) {
+        font-size: 1.3rem;
+      }
     }
     &--quantity {
       padding: .5rem;
       float: right;
+      @include respond(phone) {
+        font-size: 1.3rem;
+      }
     }
   }
 }

@@ -1,17 +1,29 @@
 
 .input-form {
-  padding: 20px;
+  padding: 2rem;
+  @include respond(tab-small) {
+    padding: 1.5rem;
+  }
 }
 
 .input-field {
   display: block;
   margin: 20px 0;
   padding: 10px 15px;
-  width: 400px;
-  font-size: 15px;
+  width: 40rem;
+  font-size: 1.5rem;
   border: 1px solid #555;
   outline: none;
   transition: all 0.3s;
+  @include respond(tab-small) {
+    padding: .8rem 1.5rem;
+    width: 35rem;
+  }
+
+  @include respond(phone) {
+      padding: .7rem 1.3rem;
+      width: 30rem;
+  }
 }
 
 .input-field:hover {
@@ -21,11 +33,4 @@
 .input-field:focus {
   border: 1px solid #55c57a;
   background-color: #e8ffe3;
-}
-
-.postForm-text {
-  font-size: 35px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
 }
