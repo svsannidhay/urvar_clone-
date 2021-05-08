@@ -25,6 +25,7 @@ body {
     @include respond(phone) {
       letter-spacing: 1rem;
       font-size: 3rem;
+      animation: none;
     }
 
     @include respond(small-phone) {
@@ -47,6 +48,7 @@ body {
     @include respond(phone) {
       letter-spacing: .5rem;
       font-size: 1.7rem;
+      animation: none;
     }
   }
 }

@@ -86,7 +86,8 @@ body {
     @media (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 1rem;
-        font-size: 3rem; } }
+        font-size: 3rem;
+        animation: none; } }
     @media (max-width: 30em) {
       .heading-primary--main {
         letter-spacing: .7rem;
@@ -103,7 +104,8 @@ body {
     @media (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: .5rem;
-        font-size: 1.7rem; } }
+        font-size: 1.7rem;
+        animation: none; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -864,13 +866,18 @@ body {
     padding: 2rem; }
     .footer__container--img {
       padding: 5rem;
-      width: 100%; }
+      width: 100%;
+      display: block;
+      margin: 0 auto; }
       @media (max-width: 75em) {
         .footer__container--img {
           padding: 2rem; } }
       @media (max-width: 56.25em) {
         .footer__container--img {
           padding: 1rem; } }
+      @media (max-width: 37.5em) {
+        .footer__container--img {
+          width: 60%; } }
     .footer__container--heading {
       font-size: 1.8rem;
       text-transform: capitalize;
@@ -882,6 +889,16 @@ body {
     .footer__container--item {
       padding: .4rem 0;
       font-size: 1.5rem; }
-    .footer__container--item a {
+    .footer__container--item a:link, .footer__container--item a:visited {
+      color: inherit;
+      background-color: #000;
       text-decoration: none;
-      color: #fff; }
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all .2s; }
+    .footer__container--item a:hover, .footer__container--item a:active {
+      color: #1db954;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+      transform: rotate(5deg) scale(1.3); }
+    .footer__container--item a ion-icon {
+      padding: 0 3rem; }

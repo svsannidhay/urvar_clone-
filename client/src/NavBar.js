@@ -17,8 +17,8 @@ class NavBar extends React.Component {
               <li className = "navigation__item"><Link to = "/" className = "navigation__link"><span>01</span>Home</Link></li>
               <li className = "navigation__item"><Link to = "/supply" className = "navigation__link"><span>02</span>Supply</Link></li>
               <li className = "navigation__item"><Link to = "/demand" className = "navigation__link"><span>03</span>Demand</Link></li>                    
-              <li className = "navigation__item"><Link to = "#" className = "navigation__link"><span>04</span>Stories</Link></li>
-              <li className = "navigation__item"><Link to = "#" className = "navigation__link"> <span>05</span> Book Now</Link></li>                    
+              <li className = "navigation__item"><Link to = "#" className = "navigation__link"><span>04</span>Certification</Link></li>
+              <li className = "navigation__item"><Link to = "#" className = "navigation__link"> <span>05</span>Help</Link></li>                    
             </ul>
           </nav>
         </div>
@@ -31,8 +31,8 @@ class NavBar extends React.Component {
               <li className = "navigation__web--item"><Link to = "/" className = "navigation__web--link navigation__web--link-blue ">Home</Link></li>
               <li className = "navigation__web--item"><Link to = "/supply" className = "navigation__web--link">Supply</Link></li>
               <li className = "navigation__web--item"><Link to = "/demand" className = "navigation__web--link">Demand</Link></li>                    
-              <li className = "navigation__web--item"><Link to = "#" className = "navigation__web--link">Stories</Link></li>
-              <li className = "navigation__web--item"><Link to = "#" className = "navigation__web--link">Book Now</Link></li>                     
+              <li className = "navigation__web--item"><Link to = "#" className = "navigation__web--link">Certification</Link></li>
+              <li className = "navigation__web--item"><Link to = "#" className = "navigation__web--link">Help</Link></li>                     
             </ul>
           </nav>
         </div>
