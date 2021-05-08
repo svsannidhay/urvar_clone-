@@ -535,7 +535,8 @@ body {
   margin: 2rem auto;
   font-size: 1.2rem;
   letter-spacing: .2rem;
-  padding: 1rem 3rem; }
+  padding: 1rem 3rem;
+  animation-delay: .2s; }
   @media (max-width: 96.875em) {
     .btn--card {
       margin-bottom: 1rem;
