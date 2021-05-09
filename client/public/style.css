@@ -903,3 +903,7 @@ body {
       transform: rotate(5deg) scale(1.3); }
     .footer__container--item a ion-icon {
       padding: 0 3rem; }
+
+.admin__input {
+  margin-top: 10rem;
+  padding: 2rem; }
